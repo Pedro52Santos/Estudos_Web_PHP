@@ -1,0 +1,47 @@
+CREATE SCHEMA `vaivem`;
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+CREATE TABLE `vaivem`.`estoque` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `marca` VARCHAR(40) NOT NULL,
+  `modelo` VARCHAR(45) NOT NULL,
+  `descricao` VARCHAR(144) NULL,
+  `mod_fab` TEXT(9) NOT NULL,
+  `cor` VARCHAR(20) NOT NULL,
+  `placa` TEXT(8) NOT NULL,
+  `valor` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_unicode_ci;
+
+INSERT INTO `vaivem`.`estoque` (
+`id`, 
+`marca`, 
+`modelo`, 
+`descricao`, 
+`mod_fab`, 
+`cor`, 
+`placa`, 
+`valor`) 
+VALUES (
+NULL, 
+'Ford', 
+'Ka', 
+'1.0 MPI 8V FLEX 2 PORTAS MANUAL', 
+'2013/2013', 
+'Branco', 
+'GHF9854', 
+'18000'),
+(NULL, 
+'Toyota', 
+'Corolla', 
+'1.8 SE-G 16V FLEX 4 PORTAS AUTOMÁTICO', 
+'2007/2008',
+'Preto', 
+'KZY4838', 
+'38000');
+
+SELECT * FROM vaivem.estoque;
