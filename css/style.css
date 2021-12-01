@@ -5,7 +5,11 @@
  *
  * Made By MaterializeCSS.com
  */
+ @import url('https://fonts.googleapis.com/css2?family=Varta:wght@400;600&display=swap');
 
+ body{
+  font-family: 'Varta', sans-serif;
+ }
 .icon-block {
   padding: 0 15px;
 }
@@ -13,8 +17,8 @@
 	font-size: inherit;
 }
 #logo-container img{
-  width: 58px;
-  height: 58px;
+  width: 70px;
+  height: 70px;
 }
 nav ul a{
   color: #1E1E20;
