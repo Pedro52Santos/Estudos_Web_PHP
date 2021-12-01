@@ -12,3 +12,10 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#logo-container img{
+  width: 58px;
+  height: 58px;
+}
+nav ul a{
+  color: #1E1E20;
+}
