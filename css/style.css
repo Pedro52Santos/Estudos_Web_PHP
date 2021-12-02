@@ -44,3 +44,13 @@ nav ul a{
   color: #1E1E20;
   font-size: 40px;
 }
+.header.center{
+  color: #d6006d;
+  font-weight: 700;
+}
+.input-field label {
+  color: #02CA63;
+}
+input, select, textarea{
+  color: #02CA63;
+}

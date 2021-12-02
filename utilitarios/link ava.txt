@@ -1,0 +1,11 @@
+•	Estrutura PHP com os includes do cabeçalho e do rodapé da interface da loja. (8 min) https://youtu.be/3tjOz5XDyZM
+[12:29, 19/11/2021] +55 69 8478-1320: 4a semana 22/11 a 28/11
+
+•	Como montar o form para adicionar um carro no banco de dados da loja. (17min) https://youtu.be/frp-3rMMuu8
+•	CREATE - Como criar uma conexão a banco de dados para inserir um registro (28 min) https://youtu.be/vbMFzdq_SrY
+•	READ - Como criar uma conexão a banco de dados e fazer a leitura dos registros de uma tabela de banco de dados da loja de carros. (13 min) https://youtu.be/xdQEA7H6h_k
+•	Detalhe importante sobre compatibilidade de character sets no uso do banco de dados (8 min) https://youtu.be/zyrmTt8j400
+•	UPDATE - Ccomo criar uma página de atualização em PHP para atualizar os dados do registro de um carro da loja de carros.(22 min) https://youtu.be/evtBaOibzNg
+[12:29, 19/11/2021] +55 69 8478-1320: 5ª semana 29/11 a 30 /11
+•	DELETE - Como criar uma página de exclusão em PHP para apagar o registro de um carro da loja de carros (21 min) https://youtu.be/7Zz7MckJjsI
+•	Como criar a parte de relatório da loja de carros (44 min) https://youtu.be/eqiX3JKt3DM
