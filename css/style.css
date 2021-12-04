@@ -54,3 +54,14 @@ nav ul a{
 input, select, textarea{
   color: #02CA63;
 }
+.btn-large{
+  background-color: #02CA63;
+}
+th{
+  color: #02CA63;
+  font-size: large;
+}
+td{
+  color: #d6006d;
+  font-size: large;
+}

@@ -21,14 +21,24 @@ include_once 'includes/header.php';
                             <input type="text" name="descricao" id="descricao">
                             <label for="descricao">Descrição</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s4">
                             <input type="text" name="mod_fab" id="mod_fab">
                             <label for="mod_fab">Ano do modelo / Ano de Fabricação</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s4">
                             <input type="text" name="placa" id="placa">
                             <label for="placa">Placa</label>
                         </div>
+                        <div class="input-field col s4">
+                            <input type="text" name="valor" id="valor">
+                            <label for="valor">Valor</label>
+                        </div>
+                    
+                                <button class="btn-large waves-effect waves-light" type="submit" name="btn-adicionar">Adicionar
+                                <i class="material-icons right">add</i>
+                                 </button>
+                         
+                      
                     </form>
             </div>
         </div>

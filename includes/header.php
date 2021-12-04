@@ -14,15 +14,15 @@
   <nav class="amber lighten-5" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="/index.php"><img src="assets/imagens/logo.svg"></a> <!-- Substituir pelo logo horizontal pq o professor prefere assim-->
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Consultar</a></li>
+        <li><a href="/consultar.php">Consultar</a></li>
         <li><a href="/adicionar.php">Adicionar</a></li>
-        <li><a href="#">Relatórios</a></li>
+        <li><a href="/relatorios.php">Relatórios</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Consultar</a></li>
-        <li><a href="#">Adicionar</a></li>
-        <li><a href="#">Relatórios</a></li>
+        <li><a href="/consultar.php">Consultar</a></li>
+        <li><a href="/adicionar.php">Adicionar</a></li>
+        <li><a href="/relatorios.php">Relatórios</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
