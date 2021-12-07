@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="amber lighten-5" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="/ifroweb/index.php"><img src="assets/imagens/logo.svg"></a> <!-- Substituir pelo logo horizontal pq o professor prefere assim-->
+    <div class="nav-wrapper container"><a id="logo-container" href="/ifroweb/index.php"><img src="assets/imagens/logo-horizontal.png"></a> <!-- Substituir pelo logo horizontal pq o professor prefere assim-->
       <ul class="right hide-on-med-and-down">
         <li><a href="/ifroweb/consultar.php">Consultar</a></li>
         <li><a href="/ifroweb/adicionar.php">Adicionar</a></li>

@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="col l12 s12">
-          <img src="assets/imagens/logo.png" id="imagem-rodape">
+          <img src="assets/imagens/logo-invertida.png" id="imagem-rodape">
           <p id="descricao-rodape"><font color="d6006e">Feito por </font> <font color="#00d668">Pedro Santos.</font> <font color="d6006e">&copy; Todos direitos reservados</font> </p>
         </div>
       </div>

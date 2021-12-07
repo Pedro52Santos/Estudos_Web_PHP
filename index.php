@@ -20,9 +20,9 @@ include_once 'includes/header.php';
   
       </div>
       <div class="col s12 m6 l6 xl6">
-        <img src="assets/imagens/logo.png" 
+        <img src="assets/imagens/logo-vertical.png" 
         alt="Logo da página, um carro indo e outro voltando" 
-        width="75%"
+        width="80%"
         style=" position: static;"
         >  <!-- Substituir pelo logo vertical pq o professor prefere assim-->
 

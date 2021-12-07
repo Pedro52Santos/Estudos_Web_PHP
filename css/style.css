@@ -18,8 +18,10 @@
 	font-size: inherit;
 }
 #logo-container img{
-  width: 70px;
-  height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 185px;
+  height: 60px;
 }
 nav ul a{
   color: #1E1E20;
@@ -31,7 +33,7 @@ nav ul a{
   width: 100%;
 }
 #imagem-rodape{
-  width: 70px;
+  width: 185px;
 }
 #descricao-rodape{
   color: #1E1E20;
