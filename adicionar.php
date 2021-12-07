@@ -8,7 +8,7 @@ include_once 'includes/header.php';
         <div class="row center">
             <div class="col s12">
                 <h3 class="header center">Adicionar Carro</h3>
-                    <form action="#" method="POST">
+                    <form action="php_action/create.php" method="POST">
                         <div class="input-field col s6">
                             <input type="text" name="marca" id="marca">
                             <label for="marca">Marca</label>
