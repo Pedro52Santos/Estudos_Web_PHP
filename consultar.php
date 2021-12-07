@@ -1,5 +1,8 @@
 <?php 
-    include_once 'includes/header.php'
+//conexão
+include_once 'php_action/db_connect.php';
+//Header
+include_once 'includes/header.php';
 ?>
 
 <div class="section no-pad-bot">
@@ -29,20 +32,56 @@
                 </tr>
             </thead>
             <tbody>
+        
+        <?php 
+                $sql = "SELECT * FROM estoque";
+                $resultado = mysqli_query($connect, $sql);
+                while($dados = mysqli_fetch_array($resultado)) :
+        
+        ?>
                 <tr>
-                    <td>Ford</td>
-                    <td>Ka</td>
-                    <td>1.0 MPI 8V Flex 2P MANUAL</td>
-                    <td>2013/2013</td>
-                    <td>Branco</td>
-                    <td>GHF9845</td>
-                    <td>18.000,00</td>
-                    <td><a href="#" class="btn-floating orange">
+                    <td><?php echo $dados['marca']; ?></td>
+                    <td><?php echo $dados['modelo']; ?></td>
+                    <td><?php echo $dados['descricao']; ?></td>
+                    <td><?php echo $dados['mod_fab']; ?></td>
+                    <td><?php echo $dados['cor']; ?></td>
+                    <td><?php echo $dados['placa']; ?></td>
+                    <td><?php echo $dados['valor']; ?></td>
+
+                    <td><a href="editar.php?id=<?php echo $dados['id']; ?>" 
+                        class="btn-floating orange">
                         <i class="material-icons">edit</i></a></td>
 
-                    <td><a href="#" class="btn-floating red modal-trigger">
+                    <td><a href="#modal<?php echo $dados['id']; ?>"
+                     class="btn-floating red modal-trigger">    
                         <i class="material-icons">delete</i></a></td>
+
+
+                    <!-- inicio do modal -->
+                    <div id="modal<?php echo $dados['id']; ?>" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h1>Deseja realmente excluir?</h1>
+                            <p>
+                            <?php echo $dados['marca']; ?> -
+                            <?php echo $dados['modelo']; ?> -
+                            <?php echo $dados['descricao']; ?> -
+                            <?php echo $dados['mod_fab']; ?> -
+                            <?php echo $dados['cor']; ?>> -
+                            <?php echo $dados['placa']; ?> -
+                            <?php echo $dados['valor']; ?> -
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a  href="" class="modal-close waves-effect
+                             waves-green btn-flat">Não</a>
+                            <form action="php_action/delete.php" method="POST">
+                                <input type="hidden" name=id value="<?php echo $dados['id'] ?>">
+                                <button Type="submit" name="btn-deletar" class="btn red"> Sim, excluir</button>  
+                            </form>
+                        </div>
+                    </div>
                 </tr>
+                <?php endwhile; ?>
             </tbody>
         </table>
   
