@@ -24,7 +24,7 @@ include_once 'includes/header.php';
         alt="Logo da página, um carro indo e outro voltando" 
         width="80%"
         style=" position: static;"
-        >  <!-- Substituir pelo logo vertical pq o professor prefere assim-->
+        > 
 
       </div>        
   </div>

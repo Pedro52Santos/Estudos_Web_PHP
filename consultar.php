@@ -48,39 +48,39 @@ include_once 'includes/header.php';
                     <td><?php echo $dados['placa']; ?></td>
                     <td><?php echo $dados['valor']; ?></td>
 
-                    <td><a href="editar.php?id=<?php echo $dados['id']; ?>" 
+                    <td><a href="editar.php?id=<?php echo $dados['id'];?>" 
                         class="btn-floating orange">
                         <i class="material-icons">edit</i></a></td>
 
-                    <td><a href="#modal<?php echo $dados['id']; ?>"
-                     class="btn-floating red modal-trigger">    
-                        <i class="material-icons">delete</i></a></td>
+                    <td><a href="#modal<?php echo $dados['id'];?>" class="btn-floating red modal-trigger">
+                        <i class="material-icons">delete</i>
+                        </a>
+                    </td>
 
-
-                    <!-- inicio do modal -->
-                    <div id="modal<?php echo $dados['id']; ?>" class="modal modal-fixed-footer">
+                                        <!-- Modal Structure -->
+                    <div id="modal<?php echo $dados['id'];?>" 
+                    class="modal modal-fixed-footer">
                         <div class="modal-content">
-                            <h1>Deseja realmente excluir?</h1>
+                            <h4>Deseja realmente excluir?</h4>
                             <p>
-                            <?php echo $dados['marca']; ?> -
-                            <?php echo $dados['modelo']; ?> -
-                            <?php echo $dados['descricao']; ?> -
-                            <?php echo $dados['mod_fab']; ?> -
-                            <?php echo $dados['cor']; ?>> -
-                            <?php echo $dados['placa']; ?> -
-                            <?php echo $dados['valor']; ?> -
+
+                            <?php echo $dados['marca']; ?> - <?php echo $dados['modelo']; ?> -
+                            <?php echo $dados['descricao']; ?> - <?php echo $dados['mod_fab']; ?> - 
+                            <?php echo $dados['cor']; ?>> - <?php echo $dados['placa']; ?> -
+                            <?php echo $dados['valor']; ?> 
+
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <a  href="" class="modal-close waves-effect
-                             waves-green btn-flat">Não</a>
-                            <form action="php_action/delete.php" method="POST">
-                                <input type="hidden" name=id value="<?php echo $dados['id'] ?>">
-                                <button Type="submit" name="btn-deletar" class="btn red"> Sim, excluir</button>  
-                            </form>
+                        <form action="php_action/delete.php" method="POST">
+                            <input type="hidden" name=id value="<?php echo $dados['id']; ?>">
+                            <button type="submit" name="btn-deletar" class="btn green"><font color="#FFFFFF">Sim</font></button>
+                        </form> 
+                        <a href="consultar.php" class="red red modal-close waves-effect btn-flat"><font color="#FFFFFF">Não</font></a>
                         </div>
-                    </div>
+                    </div>    
                 </tr>
+
                 <?php endwhile; ?>
             </tbody>
         </table>

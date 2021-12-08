@@ -9,6 +9,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js">
+    defer
+  </script>
 </head>
 <body>
   <nav class="amber lighten-5" role="navigation">
